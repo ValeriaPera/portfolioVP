@@ -1,0 +1,373 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.up-btn {
+  position: fixed;
+  bottom: 0px;
+  right: 0px; 
+  background-color:#AB47BC;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family:'Poppins';
+  color: white;
+
+}
+/* HEADER */
+header {
+  display: flex;
+  padding: 1rem;
+  justify-content: space-between;
+  align-items: center;
+    
+}
+.header_name {
+  background-color: rgba(76, 0, 130, 0.589);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 0.3rem;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+}
+.header_name:hover {
+background-color: #EF5350;
+}
+.header-contact a{
+  color: rgba(76, 0, 130, 0.589);
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+.header-contact a:hover {
+  color: #EF5350;
+}
+.header-contact i {
+  margin: 0 0.5rem;
+}
+/* GREETING CONTAINER */
+
+
+.greeting-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-image: url(images/pexels-photo-4022219.jpeg);
+  background-position: center;
+  
+
+}
+
+
+
+.greeting {
+  height: 70vh;
+
+  font-family: 'Poppins';
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.greeting a {
+  text-decoration:none;
+}
+
+.greeting-about-me, .about-me_title{
+  font-size:3rem;
+  color: #EF5350;
+  position: relative;
+  animation-duration: 2s;
+  animation-name: slidein;
+}
+
+.greeting-my-work{
+  font-size:3rem;
+  color: #AB47BC;
+  position: relative;
+  animation-duration: 2s;
+  animation-name: slidein;
+}
+
+
+.greeting-contact-me{
+  font-size:4rem;
+  color: #FF8F00;
+  font-family: 'Pacifico', cursive;
+  position: relative;
+  animation-duration: 2s;
+  animation-name: slidein;
+}
+@keyframes slidein {
+  from {
+   right: 200px;
+  }
+
+  to {
+    right: 0px;
+  }
+}
+
+.greeting-occupation{
+  font-size: 2rem;
+  color:#651FFF;
+  font-family: monospace;
+  margin-top: 2rem;
+  text-align: center;
+  
+}
+
+
+
+.greeting-highlight {
+  background-color: #C5C8CD;
+  position:relative;
+}
+.space {
+  position:absolute;
+  right: 0;
+  width: 0;
+  border-left: 1px solid grey;
+  background-color: #C5C8CD;
+  animation: maquina 5s infinite alternate steps(10);
+}
+@keyframes maquina {
+  from {
+    width: 100%;
+  }
+  to {
+    width: 0%;
+    
+  }
+}
+
+/* ARROW  */
+
+
+.arrow-wrap {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  margin-bottom: 2rem;
+}
+  .arrow {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    color: white;
+    animation-name: move-arrow;
+    animation-duration: 2s;
+    animation-iteration-count:infinite ;
+    position: relative;
+    font-size: 2rem;
+  }
+  @keyframes move-arrow {
+    from {
+      color: white;
+    }
+    to {
+      color: #AB47BC;
+    }
+  }
+
+/* ABOUT ME CONTAINER */
+
+.about-me_container {
+  display: flex;
+  align-items: center;
+  background-color:rgb(245, 218, 240);
+  min-height: 100vh;
+}
+.about-me_title {
+  padding-bottom:2rem ;
+}
+.about-me_text{
+  font-family: 'Poppins';
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.highlight-text {
+  color: #EF5350;
+}
+.about-me_description {
+  padding: 0 1rem;
+  line-height: 1.5rem;
+}
+.about-me_image {
+  height: 100vh;
+  width: 50%;
+
+}
+
+
+
+
+/* MY WORK CONTAINER */
+.my-work_container {
+  padding: 1%;
+  font-family: 'Raleway';
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 100vh;
+  
+  
+  
+}
+.my-work_title {
+  text-align: center;
+  transform: rotate(-90deg);
+  font-size: 5rem;
+  margin: 1rem 0;
+}
+.projects-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 1rem;
+  width: 80%;
+}
+
+.my-project-card {
+  background-color: rgb(245, 218, 240);
+  border-radius: 5px;
+  box-shadow: 5px 5px 20px gray;
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+.my-project-card:hover .project-img {
+display: none;
+}
+.my-project-card:hover .project-info  {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.project-title {
+  font-family: 'Poppins';
+  color: dimgray;
+  margin: 0.5rem 0;
+  text-align: center;
+}
+.project-link {
+  color: black;
+  text-decoration: none;
+}
+.project-img {
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  width: 240px;
+  height: 210px;
+  object-fit: cover;
+}
+.project-info {
+  display: none;
+  width: 240px;
+  height: 210px;
+
+}
+
+.project-tags {
+  text-align: center;
+}
+.tag {
+  margin: 0 0.5rem;
+  font-size: 0.8rem;
+  font-family: 'Poppins';
+}
+.css-tag {
+  color:#EF5350;
+}
+
+.html-tag {
+  color:#AB47BC;
+}
+
+.js-tag {
+  color: #FF8F00;
+}
+
+.react-tag {
+  color: #651FFF;
+}
+
+
+/* CONTACT ME CONTAINER */
+.contact-me_container {
+ background-color:#f5d3a8;
+ min-height: 100vh;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ text-align: center;
+
+}
+.contact-me_links {
+  display: flex;
+  justify-content:center;
+  flex-wrap: wrap;
+  align-items: center;
+
+}
+
+.contact-me_links a:hover .contact-me_img {
+transform: scale(1.5);
+}
+
+.contact-me_img {
+  width: 100px;
+  height: 100px;
+  margin: 0 2rem;
+}
+
+.contact-me_description {
+  margin: 2rem 2%;
+  width: 80%;
+  align-self: center;
+  line-height: 1.5rem;
+  font-family: 'Poppins';
+}
+
+
+@media (max-width:859px) {
+  .my-work_container{
+    flex-direction: column;
+  }
+  .about-me_image {
+    display: none;
+  }
+  .my-work_title{
+    font-size: 4rem;
+    transform: rotate(0deg);
+
+  }
+}
+@media (max-width:491px) {
+
+ .contact-me_img {
+   margin: 0 0.5rem;
+ }
+
+
+}

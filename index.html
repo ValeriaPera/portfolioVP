@@ -1,110 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>miPortfolio</title>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>miPortfolio</title>
+    <meta property="og:title" content="Valeria Pera" />
+    <meta
+      property="og:description"
+      content="Front-end developer, curious, 
+      a person who enjoys programming"
+    />
+    <meta
+      property="og:url"
+      content="https://valeriaperaportfolio.netlify.app/"
+    />
+    <meta
+      property="og:image"
+      content="https://valeriaperaportfolio.netlify.app/images/cherry-tree-1225186_1280"
+    />
 
-  <script src="https://kit.fontawesome.com/280c36fc72.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/280c36fc72.js"
+      crossorigin="anonymous"
+    ></script>
 
-  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
 
-  <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
 
-  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap"
-    rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-
-</head>
-
-<body>
-  <a class="up-btn" href="#header">
-    <i class="fas fa-home"></i>
-  </a>
-
-  <header id="header">
-    <a href="index.html" class="header_name">
-      <span>vale</span>
+  <body>
+    <a class="up-btn" href="#header">
+      <i class="fas fa-home"></i>
     </a>
-    <div class="header-contact">
-      <a href="https://www.linkedin.com/in/valeria-ailen-pera-93479a30/"><i class="fab fa-linkedin"></i></a>
-      <a href="mailto:valeriaapera@gmail.com"><i class="fas fa-envelope"></i></a>
-      <a href="https://github.com/ValeriaPera/"><i class="fab fa-github-square"></i></a>
+
+    <header id="header">
+      <a href="index.html" class="header_name">
+        <span>vale</span>
+      </a>
+      <div class="header-contact">
+        <a href="https://www.linkedin.com/in/valeria-ailen-pera-93479a30/"
+          ><i class="fab fa-linkedin"></i
+        ></a>
+        <a href="mailto:valeriaapera@gmail.com"
+          ><i class="fas fa-envelope"></i
+        ></a>
+        <a href="https://github.com/ValeriaPera/"
+          ><i class="fab fa-github-square"></i
+        ></a>
+      </div>
+    </header>
+    <div class="greeting-container">
+      <section class="greeting">
+        <a href="#about-me" class="greeting-about-me">Hello</a>
+        <a href="#my-work" class="greeting-my-work">I´m</a>
+        <a href="#contact-me" class="greeting-contact-me">Valeria</a>
+        <span class="greeting-occupation">
+          <span class="greeting-highlight">
+            Front-end <span class="space">&#160;</span></span
+          >
+          web developer.</span
+        >
+      </section>
+
+      <a class="arrow-wrap" href="#about-me">
+        <span class="arrow"><i class="fas fa-arrow-down"></i> </span>
+      </a>
     </div>
-  </header>
-  <div class="greeting-container">
 
-    <section class="greeting">
-      <a href="#about-me" class="greeting-about-me">Hello</a>
-      <a href="#my-work" class="greeting-my-work">I´m</a>
-      <a href="#contact-me" class="greeting-contact-me">Valeria</a>
-      <span class="greeting-occupation"> <span class="greeting-highlight"> Front-end <span
-            class="space">&#160;</span></span> web
-        developer.</span>
-    </section>
+    <main class="main-content">
+      <section class="about-me_container" id="about-me">
+        <div class="about-me_text">
+          <h1 class="about-me_title">About Me</h1>
+          <p class="about-me_description">
+            My name is <span class="highlight-text">Valeria</span>. <br />
+            I'm a <span class="highlight-text">Front-end</span> developer,<br />
+            I am currently learning backend because I believe that a person
+            should work on developing their professional skills and learning new
+            things all the time. <br />
+            I leave you some of my work,<br />
+            <span class="highlight-text">I hope you like it</span>.
+          </p>
+        </div>
+        <img
+          class="about-me_image"
+          src="./images/cherry-tree-1225186_1280.jpg"
+          alt="author-image"
+        />
+      </section>
 
+      <section class="my-work_container" id="my-work">
+        <h2 class="greeting-my-work my-work_title">My Work</h2>
 
+        <div class="projects-container"></div>
+      </section>
 
-    <a class="arrow-wrap" href="#about-me">
-      <span class="arrow"><i class="fas fa-arrow-down"></i> </span>
-    </a>
-  </div>
-
-  <main class="main-content">
-    <section class="about-me_container" id="about-me">
-      <div class="about-me_text ">
-        <h1 class="about-me_title">About Me</h1>
-        <p class="about-me_description">
-          My name is <span class="highlight-text">Valeria</span>. <br> I'm a <span
-            class="highlight-text">Front-end</span> developer,<br>
-          I am currently learning backend because I believe that a person should work on developing their professional
-          skills and learning new things all the time. <br>
-          I leave you some of my work,<br>
-          <span class="highlight-text">I hope you like it</span>.
-
+      <section class="contact-me_container" id="contact-me">
+        <h2 class="greeting-contact-me">Contact Me</h2>
+        <p class="contact-me_description">
+          <span class="highlight-text">Get in touch</span>. <br />
+          If you have any question, feel free to send me a DM or an email,
+          <br />
+          I will get back to you as soon as I can.
+          <br />
+          <span class="highlight-text">I´d love to hear from you.</span>
         </p>
-      </div>
-      <img class="about-me_image" src="./images/cherry-tree-1225186_1280.jpg" alt="author-image">
-    </section>
+        <div class="contact-me_links">
+          <a href="mailto:valeriaapera@gmail.com" target="_blank">
+            <img
+              class="contact-me_img"
+              src="./images/email-13-256.png"
+              alt="gmail"
+            />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/valeria-ailen-pera-93479a30/"
+            target="_blank"
+          >
+            <img
+              class="contact-me_img"
+              src="./images/linkedin-3-256.png"
+              alt="linkedin"
+            />
+          </a>
+          <a href="https://github.com/ValeriaPera/" target="_blank">
+            <img
+              class="contact-me_img"
+              src="./images/github-8-256.png"
+              alt="github"
+            />
+          </a>
+        </div>
+      </section>
+    </main>
 
-    <section class="my-work_container" id="my-work">
-      <h2 class="greeting-my-work my-work_title">My Work</h2>
-
-      <div class="projects-container">
-      </div>
-
-    </section>
-
-    <section class="contact-me_container" id="contact-me">
-      <h2 class="greeting-contact-me">Contact Me</h2>
-      <p class="contact-me_description">
-        <span class="highlight-text">Get in touch</span>. <br>
-        If you have any question, feel free to send me a DM or an email, <br> I will get back to you as soon as I can.
-        <br>
-        <span class="highlight-text">I´d love to hear from you.</span>
-
-      </p>
-      <div class="contact-me_links">
-
-        <a href="mailto:valeriaapera@gmail.com" target="_blank">
-          <img class="contact-me_img" src="./images/email-13-256.png" alt="gmail">
-        </a>
-        <a href="https://www.linkedin.com/in/valeria-ailen-pera-93479a30/" target="_blank">
-          <img class="contact-me_img" src="./images/linkedin-3-256.png" alt="linkedin">
-        </a>
-        <a href="https://github.com/ValeriaPera/" target="_blank">
-          <img class="contact-me_img" src="./images/github-8-256.png" alt="github">
-        </a>
-      </div>
-    </section>
-
-  </main>
-
-
-  <script src="app.js"></script>
-</body>
-
+    <script src="app.js"></script>
+  </body>
 </html>
